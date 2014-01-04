@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出发点:" 
+            android:textSize="25sp"/>
+         <EditText
+             android:text="东直门"
+            android:id="@+id/etStart"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" 
+            android:textSize="20sp"/>
+		
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="目的地:" 
+            android:textSize="25sp"/>
+         <EditText
+             android:text="西直门"
+            android:id="@+id/etEnd"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" 
+            android:textSize="20sp"/>
+        
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+         <View android:layout_width="1dp"
+             android:layout_height="1dp"
+             android:layout_weight="1"/>
+
+         <TextView 
+             android:text="选择出行方式:"
+             android:textSize="25sp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+         <Button
+             android:id="@+id/btnTrans"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="坐公交"
+             android:textSize="18sp" 
+             android:background="@drawable/btn_bg"
+             android:textColor="#fff"/>
+
+         <View android:layout_width="1dp"
+             android:layout_height="1dp"
+             android:layout_weight="1"/>
+
+          <Button
+              android:id="@+id/btnWalk"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="步行"
+              android:textSize="18sp" 
+              android:background="@drawable/btn_bg"
+              android:textColor="#fff"/>
+
+          <View android:layout_width="1dp"
+             android:layout_height="1dp"
+             android:layout_weight="1"/>
+
+           <Button
+               android:id="@+id/btnDrive"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="开车走"
+               android:textSize="18sp" 
+               android:background="@drawable/btn_bg"
+               android:textColor="#fff"/>
+
+           <View android:layout_width="1dp"
+             android:layout_height="1dp"
+             android:layout_weight="1"/>
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+       <TextView android:text="搜公交:"
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:textSize="25sp"/>
+        <EditText
+            android:text="106"
+            android:id="@+id/etLine"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" 
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/btnLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜  索"
+            android:textSize="18sp"
+            android:background="@drawable/btn_bg"
+            android:textColor="#fff"/>
+        </LinearLayout>
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+       
+       
+       
+       
+       
+       <TextView android:text="搜地址:"
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:textSize="25sp"/>
+        <EditText
+            android:text="西直门"
+            android:id="@+id/etAdress"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" 
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/btnAdress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜  索"
+            android:textSize="18sp" 
+            android:background="@drawable/btn_bg"
+            android:textColor="#fff"
+            />
+       
+       </LinearLayout>
+    <com.baidu.mapapi.MapView
+      android:id="@+id/bmapview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:clickable="true" >   
+    </com.baidu.mapapi.MapView>
+
+</LinearLayout>

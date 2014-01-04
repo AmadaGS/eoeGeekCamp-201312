@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址:" 
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content" 
+            android:textSize="20sp"/>
+        <Button 
+            android:id="@+id/btnAddress"
+            android:text="搜  索"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+       <TextView android:text="公交线路:"
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:textSize="30sp"/>
+        <EditText
+            android:id="@+id/etLine"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" 
+            android:textSize="20sp"/>
+        <Button 
+            android:id="@+id/btnLine"
+            android:text="搜  索"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            />
+       
+       
+       </LinearLayout>
+    <com.baidu.mapapi.MapView
+      android:id="@+id/bmapview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:clickable="true" >   
+    </com.baidu.mapapi.MapView>
+
+</LinearLayout>
